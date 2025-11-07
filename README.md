@@ -1,4 +1,4 @@
-# vue-tut-2
+# vue function plotter
 
 A Vue 3 + TypeScript graph plotting application with interactive canvas features, built for learning and experimenting with modern frontend technologies and mathematical visualizations.
 
