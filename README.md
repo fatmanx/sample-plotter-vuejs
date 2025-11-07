@@ -24,6 +24,8 @@ This is a graph plotting application that allows users to create, visualize, and
 - 📊 **Graph Plotting** - Plot mathematical functions and data sets
 - 🎨 **Interactive Canvas** - Zoom, pan, and interact with graphs using Konva
 - 🧮 **Mathematical Engine** - Parse and evaluate expressions with MathJS
+- ⚙ Dynamic component loading - see useDynamicComponent
+- 🛠 Bundle building with Vite
 - ⚡️ **Vite** - Fast build tool and dev server
 - 🎯 **TypeScript** - Type safety and better developer experience
 - 📱 **Responsive Design** - Material Design components with Vuetify
@@ -62,30 +64,42 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ### Compile and Hot-Reload for Development
 
 ```sh npm run dev```
+               
+### Compile and Minify for Production
+
+```sh
+  npm run build:default
+```
+
+### Compile and Bundle all for Production
+
+```sh
+  npm run build:bundle
+ ```
 
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+  npm run test:unit
 ```
 
 
 ### Run End-to-End Tests with [Playwright](https://playwright.dev)
 
-# Install browsers for the first run
+#### Install browsers for the first run
 ```npx playwright install```
 
-# When testing on CI, must build the project first
+#### When testing on CI, must build the project first
 ```npm run build```
 
-# Runs the end-to-end tests
+#### Runs the end-to-end tests
 ```npm run test:e2e```
-# Runs the tests only on Chromium
+#### Runs the tests only on Chromium
 ```npm run test:e2e -- --project=chromium```
-# Runs the tests of a specific file
+#### Runs the tests of a specific file
 ```npm run test:e2e -- tests/example.spec.ts```
-# Runs the tests in debug mode
+#### Runs the tests in debug mode
 ```npm run test:e2e -- --debug```
 
 
