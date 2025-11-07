@@ -1,0 +1,21 @@
+<script setup lang="ts">
+const props = withDefaults(defineProps<{ msg: string }>(), { msg: '' })
+</script>
+
+<template>
+  <div>
+    <h1>
+      {{ props.msg }}
+    </h1>
+
+    <h2>
+      <slot name="s1"></slot>
+    </h2>
+    <h6>
+      <slot name="s2"></slot>
+    </h6>
+    <router-view />
+  </div>
+</template>
+
+<style scoped></style>
